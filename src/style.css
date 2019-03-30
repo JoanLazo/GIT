@@ -1,22 +1,62 @@
 /* Modelo Mobile Firts */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-@import url('https://fonts.googleapis.com/css?family=Lora');
-
+@import url('https://fonts.googleapis.com/css?family=Arimo');
 
 * { margin :0;
     padding: 0;
 }
 
-header {
- height: 100px;
-}
-
-
 body{
-    background-color: #fcf3e8;
+    background-color: #f8efef;
+    font-family: 'Arimo', sans-serif;
 }
-
+.container-all {
+    width: 100%;
+    max-width: 400px;
+    max-height: 1000px;
+    margin: auto;
+    margin-top:0%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7597e', GradientType=0 );
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    max-height: 1000px;
+    margin: auto;
+    margin-top: px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,236,178,1) 35%, rgba(255,232,163,1) 42%, rgba(247,89,126,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7597e', GradientType=0 );
+}
+.img-logo{
+ margin-top: 100px;
+ width: 200px;
+ height: 200px;
+}
+.fondo {
+    background-image: url('./img/Principal.png');
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;   
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -43,33 +83,43 @@ nav ul {
   }
 
 .cabecera{
-    background-color: #fbd5af;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 5px;
 }
-.cabecera img{
-    width: 250px;
-    height: 100px; 
+
+.parrafo{
+    margin-top: 50px;
 }
+.cabecera-form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+/* .cabecera img{
+    width: 150px;
+    height: 150px; 
+} */
 .section{
     flex-wrap:  wrap;
     flex-direction: row;
 }
 .barra-navegacion{
-    font-family: 'Sriracha', cursive;
-    color: #FEFFDF;
+    font-family: 'Arimo', sans-serif;
+    color: rgb(254, 255, 223);
 }
 #cuerpo{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arimo', sans-serif;
     text-align: right;
 }
 .formulario{
     width: 300px;
     margin: auto;
-    background: #fafafa;
+    background: transparent;
     padding: 10px 30px;
     box-sizing: border-box;
     margin-top: 40px;
@@ -79,26 +129,27 @@ nav ul {
     padding-bottom: 20px;
 }
 .formulario input{
-    width: 80%;
-    padding: 5px;
+    width: 100%;
+    padding: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
-    background-color: rgba(245, 241, 241, 0.801);
+    border-color: #f6416c;
+    background-color: rgb(252, 252, 252);
 }
 .formulario p{
     margin-top: 20px;
 }
 .texto-1{
     text-align: center;
-    font-size: 14px;
-    font-size: 16px; 
-    margin-top: 0%;
-    margin-bottom: 10px;
+    font-size: 24px; 
+    margin-top: 8%;
+    margin-bottom: 1px;
 }
 .texto-center{
     text-align: center;
     margin: 10px;
+    margin-bottom: 25px;
 }
 .sign-up {
     margin-top: 15%;
@@ -108,13 +159,19 @@ nav ul {
     margin-bottom: 20px;
 }
 .link-registro{
-    color: #EF5A5A;
+    color: #ffffff;
     text-decoration: none;
     margin: 2px;
     text-align: center;
 }
 .link-footer{
-    color: #FEFFDF;
+    color:#333333;
+    text-decoration: none;
+    margin: 2px;
+    text-align: center;
+}
+.link-registro-dos{
+    color:#00b8a9;
     text-decoration: none;
     margin: 2px;
     text-align: center;
@@ -131,12 +188,18 @@ nav ul {
     margin-bottom: 20px;
     border-radius: 100%;
     padding: 0%;
-    background-color: rgb(255, 249, 249);
+    background-color: transparent;
     border-bottom-color: none;
-    border: 0%;
+    border: none;
     }
     .btn-google{
         margin-left: 25px;
+    }
+    .btn-face:hover{
+        cursor: pointer;
+    }
+    .btn-google:hover{
+        cursor: pointer;
     }
     .botones-radio{
         display: flex;
@@ -144,17 +207,63 @@ nav ul {
         margin-top: 15px;
     }
     .btn-1{
-        margin: 10px;
         margin-top: 10px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
     }
     .boton-iniciar {
-        padding: 15px;
+        padding-inline-end: 50px;
+        padding-inline-start: 50px; 
+        padding: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
         font-weight: 600;
-        font-size: 15px;
-        background-color: #EF5A5A;
+        font-size: 18px;
+        background-color: #00b8a9;
         color: #FEFFDF;
-        border-radius: 10px;
+        border-radius: 30px;
+        border: none;
+        margin: 5px;
+        width: 80%;
     }
+    .boton-cursos {
+        padding-inline-end: 50px;
+        padding-inline-start: 50px; 
+        padding: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-weight: 600;
+        font-size: 18px;
+        position: relative;
+        width: 295px;
+        height: 74px;
+        left: 38px;
+        top: 86px;
+        background: linear-gradient(84.41deg, #D247AF 1.21%, #28B1EF 112.81%);
+        border-radius: 25px;
+        color: #FEFFDF;
+        border-radius: 30px;
+        border: none;
+        margin: 5px;
+        width: 80%;
+    }
+    .boton-registro {
+        padding-inline-end: 50px;
+        padding-inline-start: 50px; 
+        padding: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-weight: 600;
+        font-size: 18px;
+        background-color: #ffffff;
+        color: #333333;
+        border-radius: 30px;
+        border: none;
+        margin: 5px;
+        width: 100%;
+    }
+
     .footer{
         display: flex;
         justify-content: center;
@@ -162,18 +271,18 @@ nav ul {
         color: #FEFFDF;
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: #EF5A5A;
+        background-color: #00b8a9;
         margin-top: 5%;
     }
     .footer-color{
-        background-color: #EF5A5A;
+        background-color: #00b8a9;
     }
     .footer-texto-color{
         color: #FEFFDF;
     }
     .footer-img{
-        width: 20px;
-        height: 20px;
+        width: 80px;
+        height: 80px;
     }
     .nav-view{
       display: flex;
@@ -204,8 +313,9 @@ nav ul {
     }
     .marca-header{
         text-align: center;
-        margin-left: 15px;
-        margin-top: 15px;
+        margin-left:5px;
+        margin-top: 5px;
+        padding: 1px;
     }
 
     @media (min-width:500px)  {
@@ -215,13 +325,12 @@ nav ul {
         
     }
 
-    
-
 
     .header-position{
-        background-color: #EF5A5A;
+        background-color: #ffffff;
         display: flex;
         flex-direction: row;
+        align-content: flex-end;
     }
     .op-header{
         display: flex;
@@ -229,14 +338,13 @@ nav ul {
         align-content: flex-end;
         justify-content: flex-end;
         box-sizing: border-box;
-
         
     }
     .opcion-header{
        position: end;
        margin: 10px;
        margin-left: 20px;
-       background-color: #EF5A5A;
+       background-color: #00b8a9;
        box-sizing: border-box;
      }
      .fondo-avatar{
@@ -252,9 +360,9 @@ nav ul {
         }
     
         .encabezado-redsocial {
-            background-color: #fcf3e8; 
-            margin-bottom: 28px;
-            border-radius: 15px;
+            background-color: #ffffff; 
+           padding: 0%;
+            border-radius: 100%;
     
         }
         .nombre-usuario {
@@ -406,39 +514,25 @@ nav ul {
          width: 70%;
 
       }
-
-
-      #mostrar-modal, #confirm-eliminar, #publicar {
+     
+      .boton-iniciar:hover {
+        background: #f6416c;
+        color: #eef3cd;
         border: none;
-        height: 35px;
-        padding: 5px;
-        font-size: 18px;
-        border-radius: 5px;
-        box-sizing: border-box;
-        transition: all 100ms ease;
       }
-      #mostrar-modal, #confirm-eliminar {
-      margin-left: 30%;
-      background: #f3ad7e;
-      color: #f2f2f2;
-
-    }
-
-      button:hover {
-        background: #eef3cd;
-        color: #3a7999;
-        box-shadow: inset 0 0 0 3px #ffffff;
+      .boton-registro:hover {
+        background: #ffffff;
+        color: #f6416c;
+        border: none;
       }
+      
 
       ::placeholder {
-        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Arimo', sans-serif;
         text-align: center;
         padding: 10px;
     }
 
-    #publicar {
-        background: #f3ad7e;
-    }
 
     #texto-publicacion {
         font-size: 120%;
@@ -460,43 +554,14 @@ nav ul {
         margin-bottom: 30px;
     }
 
-
-
     select {
         background: #ffe79a;
     }
 
-    
-   
+
     textarea, #post {
         background: #feffdf;
     }
 
-    #cierre-post {
-        border: none;
-        height: 30px;
-        padding: 4px;
-        font-size: 15px;
-        border-radius: 5px;
-        box-sizing: border-box;
-        transition: all 100ms ease;
-        margin-left: 98%;
-        background:#EF5A5A;
-        color: #f2f2f2;
-
-    }
     
 
-   .btn-edit {
-    border: none;
-    height: 30px;
-    padding: 4px;
-    font-size: 15px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: all 100ms ease;
-    margin-left: 80%;
-    background: #EF5A5A;
-    color: #f2f2f2;
-    margin-bottom: 2px; 
-   }

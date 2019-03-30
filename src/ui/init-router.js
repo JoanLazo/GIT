@@ -1,4 +1,4 @@
-import { registroForm, ingresoForm, redsocial } from './view.js';
+import { initForm, registroForm, ingresoForm, redsocial } from './view.js';
 import { getPostRouter } from '../lib/view-controller.js';
 
 
@@ -7,7 +7,10 @@ export const initRouter = () => {
     const router = routers.substr(2, routers.length - 2);
     const section = document.getElementById('container');
     section.innerHTML = '';
-    if (router === 'registro') {
+    if (router === 'inicio') {
+      const elem = initForm();
+      section.appendChild(elem);
+    } else if (router === 'registro') {
       const elem = registroForm();
       section.appendChild(elem);
     } else if (router === 'ingreso') {
@@ -21,10 +24,10 @@ export const initRouter = () => {
   };
   
   const switchTemp = (hash) => {
-    if (hash === '#/registro' || hash === '#/ingreso' || hash === '#/redsocial') {
+    if (hash === '#/inicio' || hash === '#/registro' || hash === '#/ingreso' || hash === '#/redsocial') {
       return showTemp(hash);
     }
-    return showTemp('#/ingreso');
+    return showTemp('#/inicio');
   };
   
   window.addEventListener('load', switchTemp(window.location.hash));
