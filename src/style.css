@@ -1,0 +1,502 @@
+/* Modelo Mobile Firts */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+* { margin :0;
+    padding: 0;
+}
+
+header {
+ height: 100px;
+}
+
+
+body{
+    background-color: #fcf3e8;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    min-width: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  nav ul li {
+    float: left;
+    position: relative;
+    margin: 0 20px 0 20px;
+  }
+  
+  nav ul::after {
+    content:'';
+    display: block;
+    clear: both;
+  }
+
+  nav ul li a {
+    text-decoration-line: none;
+  }
+
+.cabecera{
+    background-color: #fbd5af;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.cabecera img{
+    width: 250px;
+    height: 100px; 
+}
+.section{
+    flex-wrap:  wrap;
+    flex-direction: row;
+}
+.barra-navegacion{
+    font-family: 'Sriracha', cursive;
+    color: #FEFFDF;
+}
+#cuerpo{
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+}
+.formulario{
+    width: 300px;
+    margin: auto;
+    background: #fafafa;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    border-radius: 7px;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.formulario input{
+    width: 80%;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(245, 241, 241, 0.801);
+}
+.formulario p{
+    margin-top: 20px;
+}
+.texto-1{
+    text-align: center;
+    font-size: 14px;
+    font-size: 16px; 
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+.texto-center{
+    text-align: center;
+    margin: 10px;
+}
+.sign-up {
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.titulo-registro{
+    margin-bottom: 20px;
+}
+.link-registro{
+    color: #EF5A5A;
+    text-decoration: none;
+    margin: 2px;
+    text-align: center;
+}
+.link-footer{
+    color: #FEFFDF;
+    text-decoration: none;
+    margin: 2px;
+    text-align: center;
+}
+.botones-login{
+ display: flex;
+ justify-content: center;
+ align-content: space-between;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.btn-face, .btn-google{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    padding: 0%;
+    background-color: rgb(255, 249, 249);
+    border-bottom-color: none;
+    border: 0%;
+    }
+    .btn-google{
+        margin-left: 25px;
+    }
+    .botones-radio{
+        display: flex;
+        padding: 15px;
+        margin-top: 15px;
+    }
+    .btn-1{
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .boton-iniciar {
+        padding: 15px;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: #EF5A5A;
+        color: #FEFFDF;
+        border-radius: 10px;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        color: #FEFFDF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #EF5A5A;
+        margin-top: 5%;
+    }
+    .footer-color{
+        background-color: #EF5A5A;
+    }
+    .footer-texto-color{
+        color: #FEFFDF;
+    }
+    .footer-img{
+        width: 20px;
+        height: 20px;
+    }
+    .nav-view{
+      display: flex;
+      align-items: center;
+    }
+    .boton-view{
+      margin-top: 25px;  
+      width: 40px;
+      height: 40px;
+    }
+    .divisor{
+        border: 3px solid #fbd5af;
+        margin-top: 0%;
+    }
+    .texto-footer{
+        color: #FEFFDF;
+        text-align: center;
+    }
+    .opciones-footer{
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+    .img-header{
+        width: 30px;
+        height: 30px;
+    }
+    .marca-header{
+        text-align: center;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    @media (min-width:500px)  {
+        .marca-header,.logo-redsocial {
+            width: 70%;
+        }
+        
+    }
+
+    
+
+
+    .header-position{
+        background-color: #EF5A5A;
+        display: flex;
+        flex-direction: row;
+    }
+    .op-header{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+        justify-content: flex-end;
+        box-sizing: border-box;
+
+        
+    }
+    .opcion-header{
+       position: end;
+       margin: 10px;
+       margin-left: 20px;
+       background-color: #EF5A5A;
+       box-sizing: border-box;
+     }
+     .fondo-avatar{
+         background-color: #dfdbdb;
+         border-radius: 50%;
+         padding: 10px; 
+         margin-right: 10%;     
+         margin-bottom: 10%; 
+        }
+        .logo-redsocial {
+            width: 80%;
+            padding: 12px;
+        }
+    
+        .encabezado-redsocial {
+            background-color: #fcf3e8; 
+            margin-bottom: 28px;
+            border-radius: 15px;
+    
+        }
+        .nombre-usuario {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        #fecha{
+            font-size: 10px;
+        }
+        .formulario-post{
+            width: 78%;
+            margin: auto;
+            background: #fff2e5;
+            padding: 10px 30px;
+            box-sizing: border-box;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-radius: 7px;
+            font-size: 15px;
+            text-align: center;
+            background: #ffffff;
+         }
+        @media (min-width:300px) {
+            .op-header {
+                margin: 0%;
+                margin-left: 0%; 
+            }
+        }
+        @media (min-width:400px) {
+            .op-header {
+                margin: 0%;
+                margin-left: 10%; 
+            }
+        }
+        @media (min-width:500px) {
+            .op-header {
+                margin-left: 30%; 
+            }
+        }
+    
+        @media (min-width:700px) {
+            .op-header {
+                margin-left: 50%;
+            }
+        }
+    
+        @media (min-width:900px) {
+            .op-header {
+                margin-left: 60%;
+            }
+        }
+    
+        @media (min-width:1150px) {
+            .op-header {
+                margin-left: 70%;
+            }
+            .formulario-post{
+                width: 600px;
+             }
+        }
+
+     .imagen-post{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+     }
+     
+     .imagen-get{
+        display: flex;
+        flex-direction: row;
+     }
+
+     .imagen-tamaño{
+         width: 50px;
+         height: 50px;
+     }
+     .botones-post{
+         margin: 10px 10px 10px 10px;
+         border-radius: 3px;
+         padding: 5px;
+         color: #ffffffc5;
+     }
+
+     .selec-confi{
+         height: 25px;
+         width: 75px;
+         margin: 5px;
+         font-size: 10px;
+     }
+     .emoji-post{
+         width: 25px;
+         height: 25px;
+     }
+     .emoji-btn{
+         background-color: #ffffffc5;
+         padding: 2px;
+         border-radius: 100%;
+         margin: 8px;
+         margin-top: 15px;
+     }
+
+    #error-login-pass {
+        color: red;    
+    }
+    
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+      }
+      
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+      }
+      
+      .close {
+        color:#2c32e5;
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      #close:hover,
+      #close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+     textarea {
+         margin-top: 10px;
+         max-width: 70%;
+         min-width: 20%;
+         height: 20%;
+         min-height: 70px;
+         max-height: 70px;
+         width: 70%;
+
+      }
+
+
+      #mostrar-modal, #confirm-eliminar, #publicar {
+        border: none;
+        height: 35px;
+        padding: 5px;
+        font-size: 18px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition: all 100ms ease;
+      }
+      #mostrar-modal, #confirm-eliminar {
+      margin-left: 30%;
+      background: #f3ad7e;
+      color: #f2f2f2;
+
+    }
+
+      button:hover {
+        background: #eef3cd;
+        color: #3a7999;
+        box-shadow: inset 0 0 0 3px #ffffff;
+      }
+
+      ::placeholder {
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #publicar {
+        background: #f3ad7e;
+    }
+
+    #texto-publicacion {
+        font-size: 120%;
+        font-family: 'Lora', serif;
+        color: #283773;
+        background: white;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea, select {
+        border-radius: 5px;
+        box-sizing: border-box;
+        border: white;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+
+
+    select {
+        background: #ffe79a;
+    }
+
+    
+   
+    textarea, #post {
+        background: #feffdf;
+    }
+
+    #cierre-post {
+        border: none;
+        height: 30px;
+        padding: 4px;
+        font-size: 15px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition: all 100ms ease;
+        margin-left: 98%;
+        background:#EF5A5A;
+        color: #f2f2f2;
+
+    }
+    
+
+   .btn-edit {
+    border: none;
+    height: 30px;
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 100ms ease;
+    margin-left: 80%;
+    background: #EF5A5A;
+    color: #f2f2f2;
+    margin-bottom: 2px; 
+   }
