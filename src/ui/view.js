@@ -7,7 +7,7 @@ import {signUpWithEmailAndPasswordOnClick, signInWithPasswordOnClick,
 export const registroForm = () => {
   const tmpl = `
     <header class="cabecera">
-        <img src="logo/encabezado.png" alt="encabezado">
+        <img src="img/logo.png" alt="encabezado">
     </header>
     <nav class="nav-view">
         <ul>
